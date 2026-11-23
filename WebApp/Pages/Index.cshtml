@@ -1,0 +1,10 @@
+@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Azure OpenAI 連線測試";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Azure OpenAI 連線測試</h1>
+    <p class="alert @(Model.Succeeded ? "alert-success" : "alert-danger")" role="status">@Model.Message</p>
+</div>
